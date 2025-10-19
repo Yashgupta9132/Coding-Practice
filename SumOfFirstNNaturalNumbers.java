@@ -7,6 +7,7 @@ public class SumOfFirstNNaturalNumbers {
         System.out.println("Enter the number till which you want the sum of natural numbers. ");
         int input = sc.nextInt();
         sumOfFirstNNumbers(input);
+        sc.close();
     }
     public static void sumOfFirstNNumbers(int num){
         System.out.println("The sum of first "+ num + " natural numbers is " + (num*(num+1)/2) + " .");
