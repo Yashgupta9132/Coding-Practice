@@ -10,13 +10,11 @@ public class harshadNumber{
     }
     public static void isHarshadNumber(int num){
         int temp = num ; 
-        int length = String.valueOf(temp).length();
         int sumOfDigits = 0;
         while(temp!=0){
             int digit = temp%10 ;
             sumOfDigits += digit ;
             temp /= 10 ;
-            length--;
         }
         if (num % sumOfDigits == 0){
             System.out.println(num + " is a Harshad Number");
